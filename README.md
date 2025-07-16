@@ -28,7 +28,7 @@
 ### 🔧 Requirements
 - Windows OS
 
-- ### 🧱 How to Build
+### 🧱 How to Build
 #  open a Practice3 file, press Ctrl+Shift+B key (솔루션 빌드)
 
 💡 Future Ideas
