@@ -1,0 +1,286 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6293",
+          "message": {
+            "text": "잘못 정의된 for-loop입니다."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/jhl45/source/repos/project3/project3/move.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/jhl45/source/repos/Project3/Project3/move.cpp"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "moveblock",
+                  "decoratedName": "?moveblock@@YAXPEAH0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'Background[*X+1]':  the readable size is '88' bytes, but '-4' bytes may be read."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/jhl45/source/repos/project3/project3/move.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/jhl45/source/repos/Project3/Project3/move.cpp"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 13,
+                  "endLine": 17,
+                  "endColumn": 64
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "moveblock",
+                  "decoratedName": "?moveblock@@YAXPEAH0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/jhl45/source/repos/Project3/Project3/move.cpp"
+                          },
+                          "region": {
+                            "startLine": 12,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/jhl45/source/repos/Project3/Project3/move.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/jhl45/source/repos/Project3/Project3/move.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 시작, ('i<4' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/jhl45/source/repos/Project3/Project3/move.cpp"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/jhl45/source/repos/Project3/Project3/move.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 40
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('Background[*X+1][i]==0'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/jhl45/source/repos/Project3/Project3/move.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "'i'이(가) -1과(와) 같을 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/jhl45/source/repos/Project3/Project3/move.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 계속, ('i<4' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/jhl45/source/repos/Project3/Project3/move.cpp"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/jhl45/source/repos/Project3/Project3/move.cpp"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "'Background[*X+1][-1]'에서 읽기가 잘못됨, (읽기 가능한 범위는 0에서 21 사이임)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.43.34808.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/jhl45/source/repos/project3/project3/move.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "990e293d6daaaf2aed29dec698be47c258dfad0ee5a9d9d169a87a41520e2abe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/jhl45/source/repos/project3/project3/blockshape.h"
+          },
+          "hashes": {
+            "sha-256": "fbfd25d68bee821b82ad815b929167ef877c9b4ccab477c6e784ad74d089ebcd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/jhl45/source/repos/project3/project3/background.h"
+          },
+          "hashes": {
+            "sha-256": "e8635ddc1652b3736a14ef701b2f61f32515550e94e1b17b716196df1fe5b8c5"
+          }
+        }
+      ]
+    }
+  ]
+}
